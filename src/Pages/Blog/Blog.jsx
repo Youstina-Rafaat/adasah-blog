@@ -5,7 +5,7 @@ import BlogHeader from "../../Components/BlogHeader/BlogHeader";
 import SearchBar from "../../Components/SearchBar/SearchBar";
 import ViewToggle from "../../Components/ViewToggle/ViewToggle";
 import PostList from "../../Components/PostList/PostList";
-import PostGrid from "../../Components/POstGrid/PostGrid";
+import PostGrid from "../../Components/PostGrid/PostGrid";
 
 const POSTS_PER_PAGE = 6;
 
