@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body{
+    font-family: "Tajawal", sans-serif;
+}
+.active{
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to right, #f97316, #ea580c);
+  transition: all 0.3s ease;
+
+}

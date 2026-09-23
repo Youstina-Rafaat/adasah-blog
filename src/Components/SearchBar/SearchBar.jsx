@@ -1,0 +1,29 @@
+export default function SearchBar({value,change}) {
+    
+  return (
+    <>
+      <div className="relative w-full md:w-80">
+        <input
+          placeholder="ابحث في المقالات..."
+          className="bg-[#161616] border border-[#262626] outline-none transition-all duration-300 rounded-2xl text-white w-full px-5 py-3 pr-12"
+          type="text"
+          value={value}
+          onChange={change}
+        />
+        <svg
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-500"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </div>
+    </>
+  );
+}
