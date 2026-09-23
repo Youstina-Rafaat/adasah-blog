@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ArticleDetails({ post }) {
+export default function ArticleDetails({ post ,formatDate }) {
   const parts = post.content.split(/^##\s+/m);
 
   const intro = parts[0].trim();
@@ -141,7 +141,7 @@ export default function ArticleDetails({ post }) {
       </div>
 
       
-      <aside className="lg:order-2 order-1">
+      <div className="lg:order-2 order-1">
         <div className="space-y-6 lg:sticky lg:top-24">
           <div className="border border-[#262626] p-6 bg-[#111111] rounded-2xl">
             <div className="mb-5 flex items-center gap-3">
@@ -176,7 +176,7 @@ export default function ArticleDetails({ post }) {
               </div>
               <div className="text-center p-4 bg-[#0a0a0a] rounded-xl">
                 <i className="mb-2 fa-regular fa-calendar text-orange-500 text-xl" />
-                <p className="font-bold text-sm text-white">{post.date}</p>
+                <p className="font-bold text-sm text-white">{formatDate(post.date)}</p>
                 <p className="text-xs text-neutral-500">تاريخ النشر</p>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function ArticleDetails({ post }) {
             </div>
           </div>
         </div>
-      </aside>
+      </div>
     </div>
   );
 }

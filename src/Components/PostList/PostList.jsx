@@ -5,7 +5,7 @@ export default function PostList({ post,formatDate }) {
 
   return (
     <>
-      <article 
+      <div
         className="group bg-[#161616] rounded-2xl border border-[#262626] hover:border-orange-500/30 transition-all duration-500 overflow-hidden"
         style={{ animationDelay: "0ms" }}
       >
@@ -93,7 +93,7 @@ export default function PostList({ post,formatDate }) {
             </div>
           </div>
         </NavLink>
-      </article>
+      </div>
     </>
   );
 }

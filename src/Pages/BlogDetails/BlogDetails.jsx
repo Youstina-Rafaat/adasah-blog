@@ -26,7 +26,7 @@ export default function BlogDetails({ posts }) {
       <article className="bg-[#0a0a0a] min-h-screen">
         <ArticleHero post={post} formatDate={formatDate}/>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <ArticleDetails post={post} />
+          <ArticleDetails post={post} formatDate={formatDate}/>
           <RelatedArticles posts={posts} currentPostId={post.id} category={post.category} />
         </div>
       </article>

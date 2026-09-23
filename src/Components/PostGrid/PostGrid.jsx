@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function PostGrid({ post, formatDate}) {
   return (
     <>
-      <article
+      <div
         className="group rounded-3xl bg-[#161616] border border-[#262626] transition-all duration-500 overflow-hidden"
         style={{ animationDelay: "0ms" }}
       >
@@ -68,7 +68,7 @@ export default function PostGrid({ post, formatDate}) {
             </div>
           </div>
         </NavLink>
-      </article>
+      </div>
     </>
   );
 }

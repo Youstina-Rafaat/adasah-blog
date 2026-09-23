@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function HomePost({post,formatDate}) {
   return (
     <>
-       <article
+       <div
         className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500"
         style={{ animationDelay: "0ms" }}
       >
@@ -98,7 +98,7 @@ export default function HomePost({post,formatDate}) {
             </div>
           </div>
         </Link>
-      </article>
+      </div>
     </>
   )
 }
